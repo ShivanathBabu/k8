@@ -7,7 +7,7 @@ metadata:
     tier: app
 spec:
   containers:
-  - name: nginx
-    image: nginx
+    - name: nginx
+      image: nginx
   nodeSelctor:
     disktype: ssd
