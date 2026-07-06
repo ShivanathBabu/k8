@@ -5,19 +5,19 @@ metadata:
   labels:
     purpose: deployment-demo 
     project: roboshop
-  spec:
-    replicas: {{ .Values.deployment.replicas}}
-    selector:
-      matchLabels:
+spec:
+  replicas: {{ .Values.deployment.replicas}}
+  selector:
+    matchLabels:
+      purpose: deployment-demo 
+      project: roboshop
+  template:
+    metadata:
+      labels:
         purpose: deployment-demo 
         project: roboshop
-    template:
-      metadata:
-        labels:
-          purpose: deployment-demo 
-          project: roboshop
-      spec:
-        containers:
-        - name: nginx
-          image: nginx:{{ .Values.deployment.imageVersion }}
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:{{ .Values.deployment.imageVersion }}
     

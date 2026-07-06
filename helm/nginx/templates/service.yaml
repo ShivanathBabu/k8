@@ -10,6 +10,6 @@ spec:
     purpose: deployment-demo 
     project: roboshop
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: {{ .Values.Service.targetPort }}
+  - protocol: TCP
+    port: 80
+    targetPort: {{ .Values.Service.targetPort }}
