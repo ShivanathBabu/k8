@@ -9,5 +9,5 @@ spec:
   containers:
     - name: nginx
       image: nginx
-  nodeSelctor:
+  nodeSelector:
     disktype: ssd
