@@ -11,3 +11,8 @@ spec:
       image: nginx
   nodeSelector:
     disktype: ssd
+  tolerations:
+    - key: key1
+      operation: "Equal"
+      value: "value1"
+      effect: "NoSchedule"
