@@ -6,7 +6,7 @@ metadata:
     purpose: deployment-demo 
     project: roboshop
   spec:
-    replicas: {{ .values.deployment.replicas}}
+    replicas: {{ .Values.deployment.replicas}}
     selector:
       matchLabels:
         purpose: deployment-demo 
@@ -19,5 +19,5 @@ metadata:
       spec:
         containers:
         - name: nginx
-          image: nginx:{{ .values.deployment.imageVersion }}
+          image: nginx:{{ .Values.deployment.imageVersion }}
     
